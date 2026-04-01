@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Gerardo - Desarrollador Full Stack especializado en React, JavaScript y animaciones CSS"
+    />
+    <meta
+      name="keywords"
+      content="Full Stack, React, JavaScript, CSS, Frontend, Backend, Portfolio"
+    />
+    <meta name="author" content="Gerardo" />
+    <title>Gerardo | Full Stack Developer</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%231a1a2e'/%3E%3Ctext x='4' y='22' font-family='monospace' font-size='16' fill='%2300ff88' font-weight='bold'%3E%26gt%3B_%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome para iconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header con navegación -->
+    <header class="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-text"><</span>Geraa<span
+            class="nav__logo-accent"
+            >.dev</span
+          ><span class="nav__logo-text">/ ></span>
+        </a>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link nav__link--active">
+              <i class="fas fa-home"></i> Inicio
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="aboutme.html" class="nav__link">
+              <i class="fas fa-user"></i> Sobre mí
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">
+              <i class="fas fa-code"></i> Proyectos
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <i class="fas fa-tools"></i> Habilidades
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              <i class="fas fa-envelope"></i> Contacto
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="hero">
+        <div class="hero__background">
+          <div class="hero__matrix" id="matrix-bg"></div>
+        </div>
+        <div class="hero__content container">
+          <p class="hero__greeting">
+            Hola, soy <span class="hero__name">Gerardo</span>
+          </p>
+          <h1 class="hero__title">
+            <span class="hero__title-tag"><</span>
+            Full Stack Developer
+            <span class="hero__title-tag">/ ></span>
+          </h1>
+          <div class="hero__typing">
+            <span class="hero__typing-text" id="typing-text"></span>
+            <span class="hero__typing-cursor">|</span>
+          </div>
+          <p class="hero__description">
+            Especializado en <span class="hero__highlight">React</span>,
+            <span class="hero__highlight">JavaScript</span> y
+            <span class="hero__highlight">animaciones CSS</span> con
+            <span class="hero__highlight">metodología BEM</span>
+          </p>
+          <div class="hero__buttons">
+            <a href="#projects" class="btn btn--primary">
+              <i class="fas fa-eye"></i> Ver Proyectos
+            </a>
+            <a href="#contact" class="btn btn--secondary">
+              <i class="fas fa-paper-plane"></i> Contactar
+            </a>
+          </div>
+          <div class="hero__social">
+            <a
+              href="https://github.com/geraa-dev"
+              target="_blank"
+              class="hero__social-link"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/gerardo-cervantes-15a504261/"
+              target="_blank"
+              class="hero__social-link"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://instagram.com/geraa.js"
+              target="_blank"
+              class="hero__social-link"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero__scroll">
+          <span>Scroll</span>
+          <div class="hero__scroll-icon">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="skills section" id="skills">
+        <div class="container">
+          <h2 class="section__title">
+            <span class="section__title-tag"><</span>
+            Habilidades Técnicas
+            <span class="section__title-tag">/ ></span>
+          </h2>
+          <div class="skills__grid">
+            <!-- Frontend Skills -->
+            <div class="skill-card">
+              <div class="skill-card__icon skill-card__icon--frontend">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h3 class="skill-card__title">Frontend</h3>
+              <ul class="skill-card__list">
+                <li><span class="skill-tag">React</span></li>
+                <li><span class="skill-tag">JavaScript ES6+</span></li>
+                <li><span class="skill-tag">TypeScript</span></li>
+                <li><span class="skill-tag">HTML5 Semántico</span></li>
+                <li><span class="skill-tag">CSS3 Avanzado</span></li>
+                <li><span class="skill-tag">SASS/SCSS</span></li>
+                <li><span class="skill-tag">BEM Methodology</span></li>
+                <li><span class="skill-tag">Responsive Design</span></li>
+              </ul>
+            </div>
+
+            <!-- Backend Skills -->
+            <div class="skill-card">
+              <div class="skill-card__icon skill-card__icon--backend">
+                <i class="fas fa-server"></i>
+              </div>
+              <h3 class="skill-card__title">Backend</h3>
+              <ul class="skill-card__list">
+                <li><span class="skill-tag">Node.js</span></li>
+                <li><span class="skill-tag">Express.js</span></li>
+                <li><span class="skill-tag">MongoDB</span></li>
+                <li><span class="skill-tag">PostgreSQL</span></li>
+                <li><span class="skill-tag">REST APIs</span></li>
+                <li><span class="skill-tag">GraphQL</span></li>
+                <li><span class="skill-tag">Autenticación JWT</span></li>
+              </ul>
+            </div>
+
+            <!-- Tools & Others -->
+            <div class="skill-card">
+              <div class="skill-card__icon skill-card__icon--tools">
+                <i class="fas fa-toolbox"></i>
+              </div>
+              <h3 class="skill-card__title">Herramientas</h3>
+              <ul class="skill-card__list">
+                <li><span class="skill-tag">Git & GitHub</span></li>
+                <li><span class="skill-tag">VS Code</span></li>
+                <li><span class="skill-tag">npm/yarn</span></li>
+                <li><span class="skill-tag">Vite</span></li>
+                <li><span class="skill-tag">Webpack</span></li>
+                <li><span class="skill-tag">Docker</span></li>
+                <li><span class="skill-tag">Figma</span></li>
+                <li><span class="skill-tag">Terminal/Shell</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projects section" id="projects">
+        <div class="container">
+          <h2 class="section__title">
+            <span class="section__title-tag"><</span>
+            Proyectos Destacados
+            <span class="section__title-tag">/ ></span>
+          </h2>
+          <div class="projects__grid">
+            <!-- Project 1 -->
+            <article class="project-card">
+              <div class="project-card__image">
+                <div class="project-card__placeholder">
+                  <i class="fas fa-couch"></i>
+                </div>
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">MueblesShop</h3>
+                <p class="project-card__description">
+                  E-commerce responsive para mueblería con carrito de compras,
+                  pasarela de pagos y panel de administración.
+                </p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">Stripe</span>
+                </div>
+                <div class="project-card__links">
+                  <a
+                    href="#"
+                    class="project-card__link"
+                    aria-label="Ver código"
+                  >
+                    <i class="fab fa-github"></i> Código
+                  </a>
+                  <a
+                    href="#"
+                    class="project-card__link project-card__link--demo"
+                    aria-label="Ver demo"
+                  >
+                    <i class="fas fa-external-link-alt"></i> Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card">
+              <div class="project-card__image">
+                <div class="project-card__placeholder">
+                  <i class="fas fa-compass"></i>
+                </div>
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">Natours Adventure</h3>
+                <p class="project-card__description">
+                  Landing page para agencia de tours con animaciones CSS
+                  avanzadas, sistema de reservas y blog integrado.
+                </p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">SASS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">BEM</span>
+                </div>
+                <div class="project-card__links">
+                  <a
+                    href="#"
+                    class="project-card__link"
+                    aria-label="Ver código"
+                  >
+                    <i class="fab fa-github"></i> Código
+                  </a>
+                  <a
+                    href="#"
+                    class="project-card__link project-card__link--demo"
+                    aria-label="Ver demo"
+                  >
+                    <i class="fas fa-external-link-alt"></i> Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card">
+              <div class="project-card__image">
+                <div class="project-card__placeholder">
+                  <i class="fas fa-terminal"></i>
+                </div>
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">DevEnv Manager</h3>
+                <p class="project-card__description">
+                  CLI para gestión de entornos de desarrollo con instalación
+                  automática de dependencias y configuración personalizada.
+                </p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">PowerShell</span>
+                  <span class="tech-tag">Bash</span>
+                  <span class="tech-tag">npm</span>
+                </div>
+                <div class="project-card__links">
+                  <a
+                    href="#"
+                    class="project-card__link"
+                    aria-label="Ver código"
+                  >
+                    <i class="fab fa-github"></i> Código
+                  </a>
+                  <a
+                    href="#"
+                    class="project-card__link project-card__link--demo"
+                    aria-label="Ver demo"
+                  >
+                    <i class="fas fa-external-link-alt"></i> Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="project-card">
+              <div class="project-card__image">
+                <div class="project-card__placeholder">
+                  <i class="fas fa-comments"></i>
+                </div>
+              </div>
+              <div class="project-card__content">
+                <h3 class="project-card__title">Chat Real-Time</h3>
+                <p class="project-card__description">
+                  Aplicación de chat en tiempo real con salas privadas,
+                  notificaciones y soporte para archivos multimedia.
+                </p>
+                <div class="project-card__tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Socket.io</span>
+                  <span class="tech-tag">Express</span>
+                  <span class="tech-tag">JWT</span>
+                </div>
+                <div class="project-card__links">
+                  <a
+                    href="#"
+                    class="project-card__link"
+                    aria-label="Ver código"
+                  >
+                    <i class="fab fa-github"></i> Código
+                  </a>
+                  <a
+                    href="#"
+                    class="project-card__link project-card__link--demo"
+                    aria-label="Ver demo"
+                  >
+                    <i class="fas fa-external-link-alt"></i> Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="projects__cta">
+            <a
+              href="https://github.com/geraa-dev"
+              target="_blank"
+              class="btn btn--outline"
+            >
+              <i class="fab fa-github"></i> Ver más en GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <h2 class="section__title">
+            <span class="section__title-tag"><</span>
+            ¡Trabajemos Juntos!
+            <span class="section__title-tag">/ ></span>
+          </h2>
+          <div class="contact__content">
+            <div class="contact__info">
+              <p class="contact__text">
+                ¿Tienes un proyecto en mente? ¡Estoy listo para convertir tus
+                ideas en realidad! Especializado en crear soluciones full stack
+                con las mejores prácticas.
+              </p>
+              <div class="contact__details">
+                <div class="contact__item">
+                  <i class="fas fa-envelope"></i>
+                  <span>gerarddh08@gmail.com</span>
+                </div>
+                <div class="contact__item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Ciudad de México</span>
+                </div>
+              </div>
+              <div class="contact__social">
+                <a
+                  href="https://github.com/geraa-dev"
+                  target="_blank"
+                  class="contact__social-link"
+                  aria-label="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/gerardo-cervantes-15a504261/"
+                  target="_blank"
+                  class="contact__social-link"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://instagram.com/geraa.js"
+                  target="_blank"
+                  class="contact__social-link"
+                  aria-label="Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://x.com/geraajs"
+                  target="_blank"
+                  class="contact__social-link"
+                  aria-label="Twitter"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+            <form class="contact__form" id="contact-form">
+              <div class="form-group">
+                <label for="name" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-input"
+                  required
+                  placeholder="Tu nombre"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  required
+                  placeholder="tu@email.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="subject" class="form-label">Asunto</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="form-input"
+                  required
+                  placeholder="Proyecto web"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-textarea"
+                  required
+                  placeholder="Cuéntame sobre tu proyecto..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full">
+                <i class="fas fa-paper-plane"></i> Enviar Mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__brand">
+            <a href="index.html" class="footer__logo">
+              <span class="footer__logo-text"><</span>Geraa<span
+                class="footer__logo-accent"
+                >.dev</span
+              ><span class="footer__logo-text">/ ></span>
+            </a>
+            <p class="footer__tagline">
+              Full Stack Developer | React Specialist | CSS Animator
+            </p>
+          </div>
+          <div class="footer__links">
+            <a href="index.html" class="footer__link">Inicio</a>
+            <a href="aboutme.html" class="footer__link">Sobre mí</a>
+            <a href="#projects" class="footer__link">Proyectos</a>
+            <a href="#contact" class="footer__link">Contacto</a>
+          </div>
+          <div class="footer__social">
+            <a
+              href="https://github.com/geraa-dev"
+              target="_blank"
+              aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/gerardo-cervantes-15a504261/"
+              target="_blank"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://instagram.com/geraa.js"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>
+            &copy; 2026 Gerardo. Hecho con
+            <span class="footer__heart"><3</span> y mucho café.
+          </p>
+          <p class="footer__code">
+            console.log("Hecho con código, no con la Store");
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
